@@ -1,5 +1,4 @@
-# Markdown template
-Below is a template Readme.md file. Use this file as a basic splash page and data dictionary for public facing repositories that are associated with specific projects and/or publications.
+
 
 
 
