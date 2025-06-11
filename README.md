@@ -10,15 +10,19 @@ This project describes the computational workflow used to identify barcoded Myco
 
 ### Directories:
 - ./Scripts ##Subfolder with scripts
-  - File name.R ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - File name.py ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - File name.txt ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - File name.nw ##Use a descriptive file name and provide a short 1-2 sentence description here. 
-- ./Fig2 ##Subfolder with scripts and data associated with Figure 2
-  - File name.R ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - File name.py ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - File name.txt ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - File name.nw ##Use a descriptive file name and provide a short 1-2 sentence description here.
+  - Remove_duplicates.sh ##Use a descriptive file name and provide a short 1-2 sentence description here
+  - SumBarcodes.plx ##Use a descriptive file name and provide a short 1-2 sentence description here
+  - SumBarcodes18.plx ##Use a descriptive file name and provide a short 1-2 sentence description here
+  - WGSBarcodeCounter18mer.plx ##Use a descriptive file name and provide a short 1-2 sentence description here. 
+  - WGSBarcodeCounter.plx
+  - barcodes.sh ##Use a descriptive file name and provide a short 1-2 sentence description here
+  - barcodes18.sh ##Use a descriptive file name and provide a short 1-2 sentence description here
+  - runMetaphlan.sh ##Use a descriptive file name and provide a short 1-2 sentence description here
+  - run_tb-profiler ##Use a descriptive file name and provide a short 1-2 sentence description here.
+  - submit_Reads_to_Metaphlan.sh
+  - submit_Reads_to_tb_profiler
+  - submit_reads_to_deduplicate.sh
+  - transpose.plx
   </br></br> **NOTE:** ##Additional notes relevant to this subfolder can be placed in this area. </br></br>
 - ./Fig3 ##Subfolder with scripts and data associated with Figure 3
   - File name.R ##Use a descriptive file name and provide a short 1-2 sentence description here
