@@ -23,14 +23,8 @@ This project describes the computational workflow used to identify barcoded Myco
   - submit_Reads_to_tb_profiler
   - submit_reads_to_deduplicate.sh
   - transpose.plx
-  </br></br> **NOTE:** ##Additional notes relevant to this subfolder can be placed in this area. </br></br>
 - ./Fig3 ##Subfolder with scripts and data associated with Figure 3
   - File name.R ##Use a descriptive file name and provide a short 1-2 sentence description here
-- ./Scripts: ##Subfolder with additional scripts and data associated with this analysis
-  - file.sh
-  - file.py
-  - file.py
-  - file.py
   </br></br> **NOTE:** Each file in this directory is a small batch script generated during analysis. Not all analyses were included in the final manuscript. </br></br>
 - ./Supplemental_figures ##Subfolder with scripts and data associated with Supplemental_figures
   - FigS1.R ##Use a descriptive file name and provide a short 1-2 sentence description here
