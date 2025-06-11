@@ -34,15 +34,15 @@ This project describes the computational workflow used to identify barcoded Myco
   - FigS4.txt ##Use a descriptive file name and provide a short 1-2 sentence description here
   - FigS5.nw ##Use a descriptive file name and provide a short 1-2 sentence description here.
 
-### Tool versions:
-  - Write necessary packages and tool versions required for this analysis here (skip if this information is already in a methods section or in the script).
+### Prerequisites:
+
+    Requires Perl, seqtk https://github.com/lh3/seqtk, fastp, gatk, tb-profile and metaphlan4
+    To download the fastq files from SRA you will also need to install sra-tools: https://github.com/ncbi/sra-tools. To speed things up a little gnu parallel: https://www.gnu.org/software/parallel/
 
 ### Citations:
   - Skip if this information is already in a methods section or in the script.
 
 
-### DOI of this repository: (Link to the Zenodo DOI, generate a unqiue DOI for this repo)
-[![DOI](https://zenodo.org/)] **Zenodo will give you a link that you can paste here**
 
 
 
