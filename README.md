@@ -14,7 +14,7 @@ Data associated with the manuscript "**Project title**" by **Author** et al. (**
 This project includes several folders with additonal data and resources used in the analysis of this work. 
 
 ### Directory:
-- ./Fig1 ##Subfolder with scripts and data associated with Figure 1
+- ./Scripts ##Subfolder with scripts
   - File name.R ##Use a descriptive file name and provide a short 1-2 sentence description here
   - File name.py ##Use a descriptive file name and provide a short 1-2 sentence description here
   - File name.txt ##Use a descriptive file name and provide a short 1-2 sentence description here
