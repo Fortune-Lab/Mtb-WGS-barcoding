@@ -6,14 +6,9 @@
 Data associated with the manuscript "**Project title**" by **Author** et al. (**Year, manuscript DOI if available**)
 
 ## Project Description
-**Short 1-2 sentence project description. Please include a data dictionary in this section if there isn't already a table with the data that includes this. If this project will not be published immediately, include relevant methods and materials used to generate this dataset here**
+This project describes the computational workflow used to identify barcoded Mycobacterium tuberculosis (Mtb) in tissue extracts from animals infected with a library of barcoded strains. More specifically, the workflow is applied to FASTQ files generated as follows: Animals are infected with a genetically barcoded strain of Mycobacterium tuberculosis (Mtb), strain Erdman described in Martin CJ, Cadena AM, Leung VW, Lin PL, Maiello P, Hicks N, Chase MR, Flynn JL, Fortune SM. Digitally Barcoding Mycobacterium tuberculosis Reveals In Vivo Infection Dynamics in the Macaque Model of Tuberculosis. mBio. 2017 May 9;8(3):e00312-17. doi: 10.1128/mBio.00312-17. PMID: 28487426; PMCID: PMC5424202. Bacteria is cultured out of harvested tissues, followed by bacterial DNA extraction, and Illumina WGS sequencing.
 
-**Please don't hesitate to contact us if there are any issues.**
-
-## File Guide
-This project includes several folders with additonal data and resources used in the analysis of this work. 
-
-### Directory:
+### Directories:
 - ./Scripts ##Subfolder with scripts
   - File name.R ##Use a descriptive file name and provide a short 1-2 sentence description here
   - File name.py ##Use a descriptive file name and provide a short 1-2 sentence description here
