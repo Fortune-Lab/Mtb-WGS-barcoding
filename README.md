@@ -37,7 +37,18 @@ This project describes the computational workflow used to identify barcoded Myco
     Requires Perl, seqtk https://github.com/lh3/seqtk, fastp, gatk, tb-profile and metaphlan4
     To download the fastq files from SRA you will also need to install sra-tools: https://github.com/ncbi/sra-tools. To speed things up a little gnu parallel: https://www.gnu.org/software/parallel/
 ### Library analysis
+   Extract, count barcodes and remove singletons.
    perl BarcodeReader0627.plx fastq_file | awk '{print $3}' | sort | uniq -c | awk '$1 > 1 {print $2 "\t" $1}' | sort -k2 -nr > LIB065162_primary_reads_sort_count_remove_singletons.tsv
+   Find inflection point and output graph.
+   python sliding_window.py
+###Barcoding 18mer
+
+###Barcoding 7mer
+
+###Sample quality control
+Tb-profiler
+Metaphlan
+
 ### Citations:
   - Skip if this information is already in a methods section or in the script.
 
