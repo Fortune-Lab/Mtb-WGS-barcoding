@@ -25,7 +25,6 @@ This project describes the computational workflow used to identify barcoded Myco
   - transpose.plx
 
 ### Prerequisites:
-
     Requires Perl, seqtk https://github.com/lh3/seqtk, fastp, gatk, tb-profile and metaphlan4
     To download the fastq files from SRA you will also need to install sra-tools: https://github.com/ncbi/sra-tools. To speed things up a little gnu parallel: https://www.gnu.org/software/parallel/
 ### Library analysis
@@ -36,8 +35,10 @@ This project describes the computational workflow used to identify barcoded Myco
    Find inflection point and output graph.
    python sliding_window.py
 ### Sample preprocessing
-  fastp
-  remove duplicates
+  Run fastp
+  
+  Remove duplicates
+  
 ### Barcoding 18mer
   WGSBarcodeCounter18.plx
   SumBarcodes18.plx
@@ -45,11 +46,9 @@ This project describes the computational workflow used to identify barcoded Myco
   WGSBarcodeCounter.plx
   SumBarcodes.plx
 ### Sample quality control
-  Tb-profiler
-  Metaphlan
-
-### Citations:
-  - Skip if this information is already in a methods section or in the script.
+  Run Tb-profiler
+  Run Metaphlan
+### Final curation
 
 
 
