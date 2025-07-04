@@ -23,14 +23,6 @@ This project describes the computational workflow used to identify barcoded Myco
   - submit_Reads_to_tb_profiler
   - submit_reads_to_deduplicate.sh
   - transpose.plx
-- ./Fig3 ##Subfolder with scripts and data associated with Figure 3
-  - File name.R ##Use a descriptive file name and provide a short 1-2 sentence description here
-  </br></br> **NOTE:** Each file in this directory is a small batch script generated during analysis. Not all analyses were included in the final manuscript. </br></br>
-- ./Supplemental_figures ##Subfolder with scripts and data associated with Supplemental_figures
-  - FigS1.R ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - FigS1.py ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - FigS4.txt ##Use a descriptive file name and provide a short 1-2 sentence description here
-  - FigS5.nw ##Use a descriptive file name and provide a short 1-2 sentence description here.
 
 ### Prerequisites:
 
@@ -38,20 +30,23 @@ This project describes the computational workflow used to identify barcoded Myco
     To download the fastq files from SRA you will also need to install sra-tools: https://github.com/ncbi/sra-tools. To speed things up a little gnu parallel: https://www.gnu.org/software/parallel/
 ### Library analysis
    Extract, count barcodes and remove singletons.
-
    
    perl BarcodeReader0627.plx fastq_file | awk '{print $3}' | sort | uniq -c | awk '$1 > 1 {print $2 "\t" $1}' | sort -k2 -nr > LIB065162_primary_reads_sort_count_remove_singletons.tsv
    
-   
    Find inflection point and output graph.
    python sliding_window.py
+### Sample preprocessing
+  fastp
+  remove duplicates
 ### Barcoding 18mer
-
+  WGSBarcodeCounter18.plx
+  SumBarcodes18.plx
 ### Barcoding 7mer
-
+  WGSBarcodeCounter.plx
+  SumBarcodes.plx
 ### Sample quality control
-Tb-profiler
-Metaphlan
+  Tb-profiler
+  Metaphlan
 
 ### Citations:
   - Skip if this information is already in a methods section or in the script.
