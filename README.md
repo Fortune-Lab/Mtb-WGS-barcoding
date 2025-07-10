@@ -47,11 +47,13 @@ This project describes the computational workflow used to identify barcoded Myco
       - WGSBarcodeCounter18.plx
       - SumBarcodes18.plx <br>
   `sbatch barcodes18.sh`
+  `perl RemoveSequencingErrors.plx`
 ### Barcoding 7mer
   - Extract and process 7 base barcodes.
       - WGSBarcodeCounter.plx
       - SumBarcodes.plx <br>
   `sbatch barcodes.sh`
+  `perl RemoveSequencingErrors.plx`
 ### Sample quality control
   - Run Tb-profiler
   `sbatch submit_Reads_to_Metaphlan.sh`
