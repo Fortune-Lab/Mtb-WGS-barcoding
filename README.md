@@ -39,18 +39,18 @@ This project describes the computational workflow used to identify barcoded Myco
 ### Sample preprocessing
   - Run fastp
   - Remove duplicates
-  - Extract reads
+  - Extract reads <br>
     `Remove_duplicates.sh`
   
 ### Barcoding 18mer
   - Extract and process 18 base barcodes.
       - WGSBarcodeCounter18.plx
-      - SumBarcodes18.plx
+      - SumBarcodes18.plx <br>
   `sbatch barcodes18.sh`
 ### Barcoding 7mer
   - Extract and process 7 base barcodes.
       - WGSBarcodeCounter.plx
-      - SumBarcodes.plx
+      - SumBarcodes.plx <br>
   `sbatch barcodes.sh`
 ### Sample quality control
   - Run Tb-profiler
