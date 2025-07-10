@@ -22,6 +22,7 @@ This project describes the computational workflow used to identify barcoded Myco
   - submit_Reads_to_Metaphlan.sh
   - submit_Reads_to_tb_profiler
   - submit_reads_to_deduplicate.sh
+- ./BarcodeLibraryAnalysis
   - transpose.plx
 
 ### Prerequisites:
