@@ -15,32 +15,6 @@ x = df['2']
 
 y = df['log_col1']
 
-
-#coordinate_list = list(zip(x, y))
-
-#def second_derivative(y, x):
-#    """
-#    Calculates the second derivative of y with respect to x using NumPy's gradient function.
-#
-#    Args:
-#        y (numpy.ndarray): Array of y-values.
-#        x (numpy.ndarray): Array of x-values.
-#
-#    Returns:
-#        numpy.ndarray: Array of second derivative values.
-#    """
-#    dy_dx = np.gradient(y, x)
-#    d2y_dx2 = np.gradient(dy_dx, x)
-#    return d2y_dx2
-
-
-#def window(iterable, size):
-#    iters = tee(iterable, size)
-#    for i in range(500, size):
-#        for each in iters[i:(size-1)]:
-#            next(each, None)
-#    return zip(*iters)
-
 def get_slopes(x, y, size, shoulder):
     coef = []
     index = 0
