@@ -41,14 +41,15 @@ This project describes the computational workflow used to identify barcoded Myco
   - Remove duplicates
   - Extract reads <br>
     `Remove_duplicates.sh` <br>
-  - Outputs fastq files that are ready to run in dowstream scripts.
+  - Outputs fastq files that are ready to run in downstream scripts.
   
 ### Amplicon Barcoding 18mer
   - Extract and process 18 base barcodes.
       - WGSBarcodeCounter18.plx
       - SumBarcodes18.plx <br>
   `sbatch barcodes18.sh` <br>
-  `perl RemoveSequencingErrors.plx`
+  `perl RemoveSequencingErrors.plx` <br>
+    - Outputs file of barcodes and L5 integration data for each sample.
 ### WGS Barcoding 7mer
   - Extract and process 7 base barcodes.
       - WGSBarcodeCounter.plx
