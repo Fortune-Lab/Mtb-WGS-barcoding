@@ -40,7 +40,8 @@ This project describes the computational workflow used to identify barcoded Myco
   - Run fastp
   - Remove duplicates
   - Extract reads <br>
-    `Remove_duplicates.sh`
+    `Remove_duplicates.sh` <br>
+  - Outputs fastq files that are ready to run in dowstream scripts.
   
 ### Barcoding 18mer
   - Extract and process 18 base barcodes.
