@@ -36,7 +36,7 @@ This project describes the computational workflow used to identify barcoded Myco
    - Find inflection point and output graph. <br>
      
    `python sliding_window.py`
-### Sample preprocessing
+### Sample preprocessing for WGS Barcoding
   - Run fastp
   - Remove duplicates
   - Extract reads <br>
@@ -45,17 +45,17 @@ This project describes the computational workflow used to identify barcoded Myco
   
 ### Amplicon Barcoding 18mer
   - Extract and process 18 base barcodes.
-      - WGSBarcodeCounter18.plx
-      - SumBarcodes18.plx <br>
-  `sbatch barcodes18.sh` <br>
-  `perl RemoveSequencingErrors.plx` <br>
-    - Outputs file of barcodes and L5 integration data for each sample.
+      - BarcodeCounter18.plx
+      - FindThreshold18.plx <br>
+      
 ### WGS Barcoding 7mer
   - Extract and process 7 base barcodes.
       - WGSBarcodeCounter.plx
       - SumBarcodes.plx <br>
   `sbatch barcodes.sh` <br>
-  `perl RemoveSequencingErrors.plx`
+  `perl RemoveSequencingErrors.plx` <br>
+   - Outputs file of barcodes and L5 integration data for each sample.
+
 ### Sample quality control
   - Run Tb-profiler
   `sbatch submit_Reads_to_Metaphlan.sh` <br>
