@@ -26,7 +26,7 @@ This project describes the computational workflow used to identify barcoded Myco
   - RemoveSequencingErrors.plx    
   - barcodes.sh
 
-  - ./Additional_scripts
+- ./Additional_scripts
   - runMetaphlan.sh 
   - run_tb-profiler
   - submit_Reads_to_Metaphlan.sh
