@@ -28,6 +28,12 @@ This project describes the computational workflow used to identify barcoded Myco
 ### Prerequisites:
     Requires Perl, seqtk https://github.com/lh3/seqtk, fastp, gatk, tb-profile and metaphlan4
     To download the fastq files from SRA you will also need to install sra-tools: https://github.com/ncbi/sra-tools. To speed things up a little gnu parallel: https://www.gnu.org/software/parallel/
+
+### Data:
+   [bioproject]: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1290335/
+   [PRJNA1290335][bioproject]
+
+
 ### Library analysis
   - Extract, count barcodes and remove singletons. <br>
    ```
