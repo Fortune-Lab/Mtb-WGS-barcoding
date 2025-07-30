@@ -6,6 +6,7 @@
 #SBATCH -p sapphire
 #SBATCH --mem=8000
 
+#require seqtk and gnu parallel
 #module load seqtk/1.2-fasrc01
 #module load parallel/20180522-fasrc01
 
