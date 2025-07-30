@@ -18,6 +18,6 @@ out=barcode_counts_${now}.txt
 
 cat $1 | parallel --gnu -j 24 --colsep '\t' perl  WGSBarcodeCounter7mer.plx {1} {2} {3} > $out
 
-perl SumBarcodes.plx $out
+perl SumBarcodes7mer.plx $out
 
 #perl RemoveSequencingErrors.plx
