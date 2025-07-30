@@ -15,7 +15,7 @@ now=$(date +"%m_%d_%Y")
 
 out=barcode_counts_${now}.txt
 
-cat $1 | parallel --gnu -j 24 perl WGSBarcodeCounterP.plx {} > $out
+cat $1 | parallel --gnu -j 24 --colsep '\t' perl  WGSBarcodeCounter7mer.plx {1} {2} {3} > $out
 
 perl SumBarcodes.plx $out
 
