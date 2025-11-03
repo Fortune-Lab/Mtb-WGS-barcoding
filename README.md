@@ -44,7 +44,7 @@ Immunological memory elicited either through previous or ongoing M. tuberculosis
 ### Library analysis
   - Extract, count barcodes and remove singletons. <br>
    ```
-   `perl BarcodeReader0627.plx fastq_file | awk '{print $3}' | sort | uniq -c | awk '$1 > 1 {print $2 "\t" $1}' | sort -k2 -nr > LIB065162_primary_reads_sort_count_remove_singletons.tsv`
+   `perl BarcodeReaderV.plx fastq_file | awk '{print $3}' | sort | uniq -c | awk '$1 > 1 {print $2 "\t" $1}' | sort -k2 -nr > LIB065162_primary_reads_sort_count_remove_singletons.tsv`
    ```
    - Find inflection point and output graph. <br>
      
