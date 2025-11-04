@@ -33,14 +33,14 @@ Immunological memory elicited either through previous or ongoing M. tuberculosis
     `sbatch submit_reads_to_duplicate.sh` <br>
   - Outputs fastq files that are ready to run in downstream scripts.
   
-### WGS Barcoding 18mer
+### Amplicon WGS Barcoding 18mer
   - Extract and process 18 base barcodes.
-      - WGSBarcodeCounter18mer.plx
-      - SumBarcodes18mer.plx <br>
-      - RemoveSequencingErrors.plx
-  `sbatch barcodes18mer.sh sample_list.tsv` <br>
-   Runs the above scripts
-   - Outputs file of barcodes and L5 integration data for each sample.
+      - barcoding18mer_amplicon.plx
+      - FindThreshold.plx <br>
+  `perl barcoding18mer_amplicon.plx` <br>
+  `perl FindThreshold.plx`
+   Create a directory, download the fastq files and run the above scripts
+   - Outputs file of barcodes and a table of inflection points.
       
 ### WGS Barcoding 7mer
   - Extract and process 7 base barcodes.
